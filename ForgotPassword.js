@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'; // Import icon
-import './ForgotPassword.css'; // Import CSS file
+import { useNavigate } from 'react-router-dom'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'; 
+import './ForgotPassword.css'; 
 
 const ForgotPassword = () => {
     const [username, setUsername] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const [message, setMessage] = useState('');
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate(); 
 
     const handleChangePassword = async (e) => {
-        e.preventDefault(); // Prevent the default form submission
+        e.preventDefault(); 
 
         try {
             const response = await axios.post('http://localhost:5000/change-password', { username, newPassword });
@@ -23,7 +23,7 @@ const ForgotPassword = () => {
     };
 
     const handleBackToLogin = () => {
-        navigate('/'); // Navigate back to the login page
+        navigate('/'); 
     };
 
     return (
@@ -56,7 +56,7 @@ const ForgotPassword = () => {
                 <button type="submit" className="change-password-button">Change Password</button>
                 {message && <p className="message">{message}</p>}
                 
-                {/* Back to Login Button */}
+                
                 <button type="button" className="back-to-login-button" onClick={handleBackToLogin}>
                     <FontAwesomeIcon icon={faArrowLeft} /> Back to Login
                 </button>
