@@ -9,7 +9,7 @@ const port = 5000;
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json()); // To parse JSON body
+app.use(bodyParser.json()); 
 
 // MongoDB Connection
 
