@@ -64,7 +64,6 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    /*position: absolute;*/
     bottom: 229px;
     right: 288px;
     transition: background-color 0.3s ease;
@@ -75,53 +74,53 @@
 }
 /* Style for the Modify button */
 .modify-button {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 15px; /* Padding for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth background change */
-    font-weight: bold; /* Bold text */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-weight: bold; 
 }
 
-/* Hover effect for the Modify button */
+
 .modify-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
-/* Active effect for the Modify button */
+
 .modify-button:active {
-    background-color: #004085; /* Even darker on click */
+    background-color: #004085; 
 }
 
-/* Focus outline for accessibility */
+
 .modify-button:focus {
-    outline: 2px solid #0056b3; /* Focus outline */
-    outline-offset: 2px; /* Space between button and outline */
+    outline: 2px solid #0056b3;
+    outline-offset: 2px; 
 }
 
 .delete-button{
-    background-color: #f83b3b; /* Bootstrap primary color */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 15px; /* Padding for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth background change */
-    font-weight: bold; /* Bold text */
+    background-color: #f83b3b; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-weight: bold; 
 }
 
 .delete-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 .delete-button:active {
-    background-color: #004085; /* Even darker on click */
+    background-color: #004085; 
 }
 
-/* Focus outline for accessibility */
+
 .delete-button:focus {
-    outline: 2px solid #0056b3; /* Focus outline */
-    outline-offset: 2px; /* Space between button and outline */
+    outline: 2px solid #0056b3; 
+    outline-offset: 2px; 
 }
