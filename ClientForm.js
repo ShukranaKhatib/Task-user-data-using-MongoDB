@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ClientForm.css'; // Assuming you have styles in this file
+import './ClientForm.css'; 
 
 const ClientDataForm = () => {
     const [clients, setClients] = useState([]);
@@ -96,9 +96,9 @@ const ClientDataForm = () => {
 
         axios[method](url, formData)
             .then(response => {
-                fetchData(); // Refresh data after update or add
-                setShowForm(false); // Hide the form
-                setSelectedClientId(null); // Reset selected IDs
+                fetchData(); 
+                setShowForm(false); 
+                setSelectedClientId(null); 
                 setSelectedPartId(null);
             })
             .catch(error => {
@@ -131,7 +131,6 @@ const ClientDataForm = () => {
             axios.delete(`http://localhost:5000/clients/${clientId}`)
                 .then(response => {
                     alert(response.data.message);
-                    // Refresh client list after deletion
                     setClients(clients.filter(client => client.client_id !== clientId));
                 })
                 .catch(error => {
@@ -158,7 +157,7 @@ const ClientDataForm = () => {
                         <th>Property Name</th>
                         <th>Property Value</th>
                         <th>Modify</th>
-                        <th>Delete</th> {/* Add Delete Column */}
+                        <th>Delete</th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -186,7 +185,7 @@ const ClientDataForm = () => {
                                                 <button className='delete-button'  onClick={() => handleDelete(client.client_id)}>
                                                      Delete
                                                  </button>
-                                            </td> {/* Add Delete Button */}
+                                            </td> 
                                         </tr>
                                     ))
                                 ) : (
@@ -208,7 +207,7 @@ const ClientDataForm = () => {
                                              <button className='delete-button' onClick={() => handleDelete(client.client_id)} style={{ color: 'red' }}>
                                                  Delete
                                              </button>
-                                        </td> {/* Add Delete Button */}
+                                        </td>
                                     </tr>
                                 )
                             ))
